@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.solr.audit.AuditSolrApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 18.657 s <<< FAILURE! - in com.solr.audit.AuditSolrApplicationTest
+contextLoads(com.solr.audit.AuditSolrApplicationTest)  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditController': Unsatisfied dependency expressed through field 'solrAuditRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'solrAuditRepository': Invocation of init method failed; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property auditId found for type Audit!
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'solrAuditRepository': Invocation of init method failed; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property auditId found for type Audit!
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property auditId found for type Audit!
+

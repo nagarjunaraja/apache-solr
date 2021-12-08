@@ -1,0 +1,6 @@
+com\solr\audit\model\Audit.class
+com\solr\audit\AuditSolrApplication.class
+com\solr\audit\repository\SolrAuditRepository.class
+com\solr\audit\controller\AuditController.class
+com\solr\app\config\SolrConfig.class
+com\solr\audit\repository\CustomSolrAuditRepository.class
